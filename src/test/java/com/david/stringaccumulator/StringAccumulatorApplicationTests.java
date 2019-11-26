@@ -72,8 +72,7 @@ class StringAccumulatorApplicationTests {
 	@Test
 	void testNegative() {
 		String numbers = "2,-1\n5,-3";
-		int sum = app.add(numbers);
-		assertThrows(IllegalArgumentException.class, ()->{System.out.println(sum);});
+		assertThrows(IllegalArgumentException.class, ()->{app.add(numbers);});
 	}
 	
 	@Test
